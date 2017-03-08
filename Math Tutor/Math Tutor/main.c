@@ -9,9 +9,9 @@
 
 int op,n1,n2,total,i,ans,r;
 char sym;
-i = 0;
+int i = 0;
 
-void Eval(int total, int ans) {
+void Eval(int ans, int total) {
     if (ans == total) {
         printf("Correct!\n");}
     else {
@@ -44,12 +44,10 @@ int main() {
     
     printf("How many rounds would you like to go?  ");
     scanf("%d", &r);
-    printf("##################\n");
-    printf("ROUNDS:  %d\n", r);
-    printf("##################\n");
+    printf("ROUNDS:  %d\n\n", r);
     
     while (i++ <= (r - 1)) {
-        ans == 0;
+        ans = 0;
         total = 0;
         printf("[  %d  ]\n",i);
         printf(" ");
@@ -64,7 +62,8 @@ int main() {
         
         n1 = rand() % 10;
         n2 = rand() % 10;
-        Eval(int total, <#int ans#>);
-        DecideOp(int op, <#int n1#>, <#int n2#>);
+        DecideOp(op, n1, n2);
+        Eval(total, ans);
+
     }
 }
