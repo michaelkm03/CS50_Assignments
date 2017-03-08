@@ -18,6 +18,28 @@ void Eval(int total, int ans) {
         printf("Nope...ya DUMBASS!\n");
     }
 }
+
+void DecideOp(int op, int n1, int n2) {
+    if(op == 1) {
+        total = n1 + n2;
+        printf("What is %d + %d?  \n", n1, n2); scanf("%d", &ans);
+    }
+    else if(op == 2) {
+        total = n1 - n2;
+        printf("What is %d - %d?  \n", n1, n2); scanf("%d", &ans);
+    }
+    else if(op == 3) {
+        total = n1 * n2;
+        printf("What is %d x %d?  \n", n1, n2); scanf("%d", &ans);
+    }
+    else if(op == 4) {
+        total = n1 / n2;
+        printf("What is %d / %d?  \n", n1, n2); scanf("%d", &ans);
+    }
+    else printf("Please enter valid selection.\n");
+}
+
+
 int main() {
     
     printf("How many rounds would you like to go?  ");
@@ -42,44 +64,7 @@ int main() {
         
         n1 = rand() % 10;
         n2 = rand() % 10;
-        if(op == 1) {
-            total = n1 + n2;
-            printf("What is %d + %d?  \n", n1, n2); scanf("%d", &ans);
-        }
-        else if(op == 2) {
-            total = n1 - n2;
-            printf("What is %d - %d?  \n", n1, n2); scanf("%d", &ans);
-        }
-        else if(op == 3) {
-            total = n1 * n2;
-            printf("What is %d x %d?  \n", n1, n2); scanf("%d", &ans);
-        }
-        else if(op == 4) {
-            total = n1 / n2;
-            printf("What is %d / %d?  \n", n1, n2); scanf("%d", &ans);
-        }
-        else printf("Please enter valid selection.\n");
+        Eval(int total, <#int ans#>);
+        DecideOp(int op, <#int n1#>, <#int n2#>);
     }
-    Eval(1,1);
 }
-
-//DecideOp(int op, int n1, int n2) {
-//    if(op == 1) { return
-//        total = n1 + n2;
-//        printf("What is %d + %d?  \n", n1, n2); scanf("%d", &ans);
-//    }
-//    else if(op == 2) {
-//        total = n1 - n2;
-//        q = printf("What is %d - %d?  \n", n1, n2); scanf("%d", &ans);
-//    }
-//    else if(op == 3) {
-//        total = n1 * n2;
-//        printf("What is %d x %d?  \n", n1, n2); scanf("%d", &ans);
-//    }
-//    else if(op == 4) {
-//        total = n1 / n2;
-//        printf("What is %d / %d?  \n", n1, n2); scanf("%d", &ans);
-//    }
-//    else printf("Please enter valid selection.\n");
-
-
