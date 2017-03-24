@@ -19,19 +19,29 @@
 - Convert the each character if it is upper to lower and vice versa.
 */
 
-int main()
-{
-    char string[80];
-    int i = 0;
-    
-    printf("Enter Sentence Here:  ");
-    scanf("%s", &string);
+char string[80];
+int i = 0;
 
+void Upper(char string[80]){
     while(string[i])
     {
         putchar (toupper(string[i]));
         i++;
     }
+}
+void Lower(char string[80]){
+    while(string[i])
+    {
+        putchar (toupper(string[i]));
+        i++;
+    }
+}
+int main()
+{
+    printf("Enter Sentence Here:  ");
+    scanf("%s", &string);
+    Upper(string);
+    Lower(string);
     
     return 0;
 }
