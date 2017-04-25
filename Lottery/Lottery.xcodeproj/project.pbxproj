@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5D20CCB1EA6E5F000E30640 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A5D20CCA1EA6E5F000E30640 /* main.c */; };
+		A58600281EA83F9600BD3C06 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A58600271EA83F9600BD3C06 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A5D20CC51EA6E5F000E30640 /* CopyFiles */ = {
+		A58600221EA83F9600BD3C06 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A5D20CC71EA6E5F000E30640 /* Two Array Count Letters */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Two Array Count Letters"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5D20CCA1EA6E5F000E30640 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		A58600241EA83F9600BD3C06 /* Lottery */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lottery; sourceTree = BUILT_PRODUCTS_DIR; };
+		A58600271EA83F9600BD3C06 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A5D20CC41EA6E5F000E30640 /* Frameworks */ = {
+		A58600211EA83F9600BD3C06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,95 +38,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A5D20CBE1EA6E5F000E30640 = {
+		A586001B1EA83F9600BD3C06 = {
 			isa = PBXGroup;
 			children = (
-				A5D20CC91EA6E5F000E30640 /* Two Array Count Letters */,
-				A5D20CC81EA6E5F000E30640 /* Products */,
+				A58600261EA83F9600BD3C06 /* Lottery */,
+				A58600251EA83F9600BD3C06 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A5D20CC81EA6E5F000E30640 /* Products */ = {
+		A58600251EA83F9600BD3C06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5D20CC71EA6E5F000E30640 /* Two Array Count Letters */,
+				A58600241EA83F9600BD3C06 /* Lottery */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A5D20CC91EA6E5F000E30640 /* Two Array Count Letters */ = {
+		A58600261EA83F9600BD3C06 /* Lottery */ = {
 			isa = PBXGroup;
 			children = (
-				A5D20CCA1EA6E5F000E30640 /* main.c */,
+				A58600271EA83F9600BD3C06 /* main.c */,
 			);
-			path = "Two Array Count Letters";
+			path = Lottery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5D20CC61EA6E5F000E30640 /* Two Array Count Letters */ = {
+		A58600231EA83F9600BD3C06 /* Lottery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5D20CCE1EA6E5F000E30640 /* Build configuration list for PBXNativeTarget "Two Array Count Letters" */;
+			buildConfigurationList = A586002B1EA83F9600BD3C06 /* Build configuration list for PBXNativeTarget "Lottery" */;
 			buildPhases = (
-				A5D20CC31EA6E5F000E30640 /* Sources */,
-				A5D20CC41EA6E5F000E30640 /* Frameworks */,
-				A5D20CC51EA6E5F000E30640 /* CopyFiles */,
+				A58600201EA83F9600BD3C06 /* Sources */,
+				A58600211EA83F9600BD3C06 /* Frameworks */,
+				A58600221EA83F9600BD3C06 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Two Array Count Letters";
-			productName = "Two Array Count Letters";
-			productReference = A5D20CC71EA6E5F000E30640 /* Two Array Count Letters */;
+			name = Lottery;
+			productName = Lottery;
+			productReference = A58600241EA83F9600BD3C06 /* Lottery */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A5D20CBF1EA6E5F000E30640 /* Project object */ = {
+		A586001C1EA83F9600BD3C06 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Michael Montgomery";
 				TargetAttributes = {
-					A5D20CC61EA6E5F000E30640 = {
+					A58600231EA83F9600BD3C06 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = A5D20CC21EA6E5F000E30640 /* Build configuration list for PBXProject "Two Array Count Letters" */;
+			buildConfigurationList = A586001F1EA83F9600BD3C06 /* Build configuration list for PBXProject "Lottery" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A5D20CBE1EA6E5F000E30640;
-			productRefGroup = A5D20CC81EA6E5F000E30640 /* Products */;
+			mainGroup = A586001B1EA83F9600BD3C06;
+			productRefGroup = A58600251EA83F9600BD3C06 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5D20CC61EA6E5F000E30640 /* Two Array Count Letters */,
+				A58600231EA83F9600BD3C06 /* Lottery */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A5D20CC31EA6E5F000E30640 /* Sources */ = {
+		A58600201EA83F9600BD3C06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5D20CCB1EA6E5F000E30640 /* main.c in Sources */,
+				A58600281EA83F9600BD3C06 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A5D20CCC1EA6E5F000E30640 /* Debug */ = {
+		A58600291EA83F9600BD3C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -174,7 +174,7 @@
 			};
 			name = Debug;
 		};
-		A5D20CCD1EA6E5F000E30640 /* Release */ = {
+		A586002A1EA83F9600BD3C06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -215,14 +215,14 @@
 			};
 			name = Release;
 		};
-		A5D20CCF1EA6E5F000E30640 /* Debug */ = {
+		A586002C1EA83F9600BD3C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		A5D20CD01EA6E5F000E30640 /* Release */ = {
+		A586002D1EA83F9600BD3C06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -232,24 +232,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A5D20CC21EA6E5F000E30640 /* Build configuration list for PBXProject "Two Array Count Letters" */ = {
+		A586001F1EA83F9600BD3C06 /* Build configuration list for PBXProject "Lottery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5D20CCC1EA6E5F000E30640 /* Debug */,
-				A5D20CCD1EA6E5F000E30640 /* Release */,
+				A58600291EA83F9600BD3C06 /* Debug */,
+				A586002A1EA83F9600BD3C06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5D20CCE1EA6E5F000E30640 /* Build configuration list for PBXNativeTarget "Two Array Count Letters" */ = {
+		A586002B1EA83F9600BD3C06 /* Build configuration list for PBXNativeTarget "Lottery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5D20CCF1EA6E5F000E30640 /* Debug */,
-				A5D20CD01EA6E5F000E30640 /* Release */,
+				A586002C1EA83F9600BD3C06 /* Debug */,
+				A586002D1EA83F9600BD3C06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A5D20CBF1EA6E5F000E30640 /* Project object */;
+	rootObject = A586001C1EA83F9600BD3C06 /* Project object */;
 }

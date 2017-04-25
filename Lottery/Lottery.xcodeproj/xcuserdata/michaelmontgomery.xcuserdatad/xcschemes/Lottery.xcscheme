@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A5D20CC61EA6E5F000E30640"
-               BuildableName = "Two Array Count Letters"
-               BlueprintName = "Two Array Count Letters"
-               ReferencedContainer = "container:Two Array Count Letters.xcodeproj">
+               BlueprintIdentifier = "A58600231EA83F9600BD3C06"
+               BuildableName = "Lottery"
+               BlueprintName = "Lottery"
+               ReferencedContainer = "container:Lottery.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A5D20CC61EA6E5F000E30640"
-            BuildableName = "Two Array Count Letters"
-            BlueprintName = "Two Array Count Letters"
-            ReferencedContainer = "container:Two Array Count Letters.xcodeproj">
+            BlueprintIdentifier = "A58600231EA83F9600BD3C06"
+            BuildableName = "Lottery"
+            BlueprintName = "Lottery"
+            ReferencedContainer = "container:Lottery.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A5D20CC61EA6E5F000E30640"
-            BuildableName = "Two Array Count Letters"
-            BlueprintName = "Two Array Count Letters"
-            ReferencedContainer = "container:Two Array Count Letters.xcodeproj">
+            BlueprintIdentifier = "A58600231EA83F9600BD3C06"
+            BuildableName = "Lottery"
+            BlueprintName = "Lottery"
+            ReferencedContainer = "container:Lottery.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A5D20CC61EA6E5F000E30640"
-            BuildableName = "Two Array Count Letters"
-            BlueprintName = "Two Array Count Letters"
-            ReferencedContainer = "container:Two Array Count Letters.xcodeproj">
+            BlueprintIdentifier = "A58600231EA83F9600BD3C06"
+            BuildableName = "Lottery"
+            BlueprintName = "Lottery"
+            ReferencedContainer = "container:Lottery.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
