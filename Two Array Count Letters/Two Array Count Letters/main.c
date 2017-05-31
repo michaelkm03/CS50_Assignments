@@ -8,7 +8,7 @@
 
 /*
  
-Write a complete program using two arrays, upper and lower.  Keep the upper and lower alphabet respectively.
+Write a complete program using two arrays, upper and lower which keep the upper and lower alphabet respectively.
 
 Ask the user to enter string example:
 
@@ -31,8 +31,8 @@ B: 0 b:1
 #include <string.h>
 #include <ctype.h>
 
-char Upper[] = {'A','B'};
-char Lower[] = {'a','b'};
+char Upper[] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+char Lower[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
 char UserInputString[512];
 int i = 0;
 
