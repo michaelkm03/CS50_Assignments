@@ -10,7 +10,7 @@
 #include <ctype.h>
 
 double result = 0.0;
-char userInput[12];
+char* userInput[12];
 
 int addNums(double result, char userInput){
     result = result + userInput;
@@ -35,8 +35,8 @@ int divNums(double result, char userInput){
 int main() {
 
     printf("==========================\n\n");
-    printf("Enter calculation:  ");
-    
+    printf("Enter calculation:");
+    scanf(" %c", *userInput);
     
     return 0;
 }
