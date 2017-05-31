@@ -39,14 +39,12 @@ int i = 0;
 int main() {
 
     printf("===== Enter string here =====\n");
-    scanf("%s", UserInputString);
+    scanf(" %[^\n]s",UserInputString);
     printf("=============================\n");
     printf("Length of string is %d \n",strlen(UserInputString));
-//
-//    for(i = 0; UserInputString[i] != "\0"; i++)
-//    {
-//        printf("Length of String:  %d", i);
-//    }
+
+    for (i = 0; i <= strlen(UserInputString); i++)
+        // printf("at index %d is the value %c\n\n", i, UserInputString[i]);
     
     return 0;
 }
