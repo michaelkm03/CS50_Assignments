@@ -9,33 +9,35 @@
 #include <stdio.h>
 #include <ctype.h>
 
-char '+', '-', '*', '/';
 double result = 0.0;
-double userOperand;
+char userOperator[16];
 
-int addNums(double result, int userOperand){
+int addNums(double result, char userOperand){
     result = result + userOperand;
     return result;
 }
 
-int subNums(double result, int userOperand){
+int subNums(double result, char userOperand){
     result = result - userOperand;
     return result;
 }
 
-int mulNums(double result, int userOperand){
+int mulNums(double result, char userOperand){
     result = result * userOperand;
     return result;
 }
 
-int divNums(double result, int userOperand){
+int divNums(double result, char userOperand){
     result = result / userOperand;
     return result;
 }
 
 int main(int argc, const char * argv[]) {
 
-    
+    printf("==========================\n\n");
+    printf("Enter calculation:  ");
+    scanf("%c", &userOperator);
+    printf("index 0 %c", userOperator[2]);
     
     return 0;
 }
