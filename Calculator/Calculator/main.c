@@ -10,34 +10,33 @@
 #include <ctype.h>
 
 double result = 0.0;
-char userOperator[16];
+char userInput[12];
 
-int addNums(double result, char userOperand){
-    result = result + userOperand;
+int addNums(double result, char userInput){
+    result = result + userInput;
     return result;
 }
 
-int subNums(double result, char userOperand){
-    result = result - userOperand;
+int subNums(double result, char userInput){
+    result = result - userInput;
     return result;
 }
 
-int mulNums(double result, char userOperand){
-    result = result * userOperand;
+int mulNums(double result, char userInput){
+    result = result * userInput;
     return result;
 }
 
-int divNums(double result, char userOperand){
-    result = result / userOperand;
+int divNums(double result, char userInput){
+    result = result / userInput;
     return result;
 }
 
-int main(int argc, const char * argv[]) {
+int main() {
 
     printf("==========================\n\n");
     printf("Enter calculation:  ");
-    scanf("%c", &userOperator);
-    printf("index 0 %c", userOperator[2]);
+    
     
     return 0;
 }
