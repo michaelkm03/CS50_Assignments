@@ -33,16 +33,22 @@ the awards is $30,000.
 
 int main() {
     
-    int LotteryNum;
-    int UserNum;
+    int LotteryNum[2];
+    int UserNum[2];
     long t = 0;
     
     // Generate Lottery Number and get User Number
     srand((unsigned) time(&t));
-    LotteryNum = rand() % 50;
+    LotteryNum[0] = rand() % 10;
+    LotteryNum[1] = rand() % 10;
+
     fflush( stdout );
-    printf("Lottery Number is:  %d \n=======\n\n", LotteryNum);
-    printf("Enter your number here\n"); scanf("%d", &UserNum);
+    
+    printf("Lottery Number is:  %d%d \n=======\n\n", LotteryNum[0],LotteryNum[1]);
+    printf("Enter your number here\n"); scanf("%1d%1d", &UserNum[0], &UserNum[1]);
+//    printf("u 1   %d",UserNum[0]);
+//    printf("u 2   %d",UserNum[1]);
+    
 
     // Decide if Winner
     if (UserNum == LotteryNum) {
@@ -54,7 +60,7 @@ int main() {
     else {
         printf("Sorry...you lose.\n");
     }
- 
+    
     return 0;
 }
 
