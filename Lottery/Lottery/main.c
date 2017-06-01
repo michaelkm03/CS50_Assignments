@@ -34,21 +34,6 @@ int LotteryNum[2];
 int UserNum[2];
 long t = 0;
 
-void determineWinning(int LotteryNum[2], int UserNum[2]){
-    // Decide if Winner
-    if (UserNum[0] == LotteryNum[0] && UserNum[1] == LotteryNum[1]) {
-        printf("WINNER!  You get ALL 100000\n");
-    }
-    else if ((UserNum[0] == LotteryNum[0] || UserNum[0] == LotteryNum[1]) && (UserNum[1] == LotteryNum[0] || UserNum[1] == LotteryNum[1])) {
-        printf("Winner but just IN REVERSE!  You get  50000\n");
-    }
-    else if (UserNum[0] == LotteryNum[0] || UserNum[1] == LotteryNum[1]) {
-        printf("Winner but just ONE DIGIT!  You get  50000\n");
-    }
-    else {
-        printf("Sorry...you lose.\n");
-    }
-}
 
 int main() {
     
@@ -61,8 +46,19 @@ int main() {
     
     printf("Lottery Number is:  %d%d \n=======\n\n", LotteryNum[0],LotteryNum[1]);
     printf("Enter your number here\n"); scanf("%1d%1d", &UserNum[0], &UserNum[1]);
-//    printf("u 1   %d",UserNum[0]);
-//    printf("u 2   %d",UserNum[1]);
+    // Decide if Winner
+    if (UserNum[0] == LotteryNum[0] && UserNum[1] == LotteryNum[1]) {
+        printf("WINNER!  You get ALL 100000\n");
+    }
+    else if ((UserNum[0] == LotteryNum[0] || UserNum[0] == LotteryNum[1]) && (UserNum[1] == LotteryNum[0] || UserNum[1] == LotteryNum[1])) {
+        printf("WINNER but just IN REVERSE!  You get  50000\n");
+    }
+    else if (UserNum[0] == LotteryNum[0] || UserNum[1] == LotteryNum[1]) {
+        printf("Winner but just ONE DIGIT!  You get  50000\n");
+    }
+    else {
+        printf("Sorry...you lose.\n");
+    }
 
     
     return 0;
