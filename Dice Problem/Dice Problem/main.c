@@ -28,18 +28,97 @@
 #include <string.h>
 #include <ctype.h>
 
-int dice1[] = {1,2,3,4,5,6};
-int dice2[] = {1,2,3,4,5,6};
+
 int sum, roll1, roll2, points;
+int playState = 0;
 
 int main() {
     
     srand(time(NULL));
-    roll1 = dice1[rand() % 6];
-    roll2 = dice2[rand() % 6];
+    roll1 = 1 + rand() % 6;
+    roll2 = 1 + rand() % 6;
+    sum = roll1 + roll2;
     
-    printf("%d", roll1);
-    printf("%d", roll2);
+    printf("Roll 1:  %d\n", roll1);
+    printf("Roll 2:  %d\n", roll2);
+    
+    switch(sum) {
+        
+        case 12 :
+            printf("YOU CRAPPED OUT!  God...you're SUCH A LOSER!\n");
+            points = 0;
+            break;
+            
+        case 11 :
+            if (points == 0){
+                printf("You rolled a %d\n", sum);
+                printf("Points:  %d\n", points);
+            }
+            else {
+                printf("You Win!!!\n");
+                printf("You rolled a %d\n", sum);
+                printf("Points:  %d\n", points);
+            }
+            break;
+            
+        case 10  :
+            printf("You lose...\n");
+            points = sum;
+            printf("Points:  %d\n", points);
+            break;
+            
+        case 9  :
+            printf("You lose...\n");
+            points = sum;
+            printf("Points:  %d\n", points);
+            break;
+            
+        case 8  :
+            printf("You lose...\n");
+            points = sum;
+            printf("Points:  %d\n", points);
+            break;
+            
+        case 7  :
+            if (points == 0){
+                printf("You rolled a %d\n", sum);
+                printf("Points:  %d\n", points);
+            }
+            else {
+                printf("You Win!!!\n");
+                printf("You rolled a %d\n", sum);
+                printf("Points:  %d\n", points);
+            }
+            break;
+            
+        case 6  :
+            printf("You lose...\n");
+            points = sum;
+            printf("Points:  %d\n", points);
+            break;
+            
+        case 5  :
+            printf("You lose...\n");
+            points = sum;
+            printf("Points:  %d\n", points);
+            break;
+            
+        case 4  :
+            printf("You lose...\n");
+            points = sum;
+            printf("Points:  %d\n", points);
+            break;
+
+        case 3  :
+            printf("YOU CRAPPED OUT!  God...you're SUCH A LOSER!\n");
+            points = 0;
+            break;
+            
+        case 2  :
+            printf("YOU CRAPPED OUT!  God...you're SUCH A LOSER!\n");
+            points = 0;
+            break;
+    }
     
     return 0;
 }
