@@ -30,94 +30,118 @@
 
 
 int sum, roll1, roll2, points;
-int playState = 0;
+int gameCount = 0;
+long t = 0;
 
 int main() {
     
-    srand(time(NULL));
-    roll1 = 1 + rand() % 6;
-    roll2 = 1 + rand() % 6;
-    sum = roll1 + roll2;
+    while (gameCount < 100) {
+        gameCount+=1;
+        roll1 = 1 + rand() % 6;
+        roll2 = 1 + rand() % 6;
+        sum = (roll1 + roll2);
     
-    printf("Roll 1:  %d\n", roll1);
-    printf("Roll 2:  %d\n", roll2);
-    
-    switch(sum) {
-        
-        case 12 :
-            printf("YOU CRAPPED OUT!  God...you're SUCH A LOSER!\n");
-            points = 0;
-            break;
-            
-        case 11 :
-            if (points == 0){
-                printf("You rolled a %d\n", sum);
+        printf(" ============ GameCount | %d | ============ \n\n", gameCount);
+        switch(sum) {
+            case 12 :
+                printf("Roll 1:  %d\n", roll1);
+                printf("Roll 2:  %d\n", roll2);
+                printf("YOU CRAPPED OUT!  God...you're SUCH A LOSER!\n");
+                points = 0;
+                break;
+                
+            case 11 :
+                if (points == 0){
+                    printf("Roll 1:  %d\n", roll1);
+                    printf("Roll 2:  %d\n", roll2);
+                    printf("You rolled a %d\n", sum);
+                    printf("Points:  %d\n", points);
+                }
+                else {
+                    printf("Roll 1:  %d\n", roll1);
+                    printf("Roll 2:  %d\n", roll2);
+                    printf("You Win!!!\n");
+                    printf("You rolled a %d\n", sum);
+                    printf("Points:  %d\n", points);
+                }
+                break;
+                
+            case 10  :
+                printf("Roll 1:  %d\n", roll1);
+                printf("Roll 2:  %d\n", roll2);
+                printf("You lose...\n");
+                points = sum;
                 printf("Points:  %d\n", points);
-            }
-            else {
-                printf("You Win!!!\n");
-                printf("You rolled a %d\n", sum);
+                break;
+                
+            case 9  :
+                printf("Roll 1:  %d\n", roll1);
+                printf("Roll 2:  %d\n", roll2);
+                printf("You lose...\n");
+                points = sum;
                 printf("Points:  %d\n", points);
-            }
-            break;
-            
-        case 10  :
-            printf("You lose...\n");
-            points = sum;
-            printf("Points:  %d\n", points);
-            break;
-            
-        case 9  :
-            printf("You lose...\n");
-            points = sum;
-            printf("Points:  %d\n", points);
-            break;
-            
-        case 8  :
-            printf("You lose...\n");
-            points = sum;
-            printf("Points:  %d\n", points);
-            break;
-            
-        case 7  :
-            if (points == 0){
-                printf("You rolled a %d\n", sum);
+                break;
+                
+            case 8  :
+                printf("Roll 1:  %d\n", roll1);
+                printf("Roll 2:  %d\n", roll2);
+                printf("You lose...\n");
+                points = sum;
                 printf("Points:  %d\n", points);
-            }
-            else {
-                printf("You Win!!!\n");
-                printf("You rolled a %d\n", sum);
+                break;
+                
+            case 7  :
+                printf("Roll 1:  %d\n", roll1);
+                printf("Roll 2:  %d\n", roll2);
+                if (points == 0){
+                    printf("You rolled a %d\n", sum);
+                    printf("Points:  %d\n", points);
+                }
+                else {
+                    printf("You Win!!!\n");
+                    printf("You rolled a %d\n", sum);
+                    printf("Points:  %d\n", points);
+                }
+                break;
+                
+            case 6  :
+                printf("Roll 1:  %d\n", roll1);
+                printf("Roll 2:  %d\n", roll2);
+                printf("You lose...\n");
+                points = sum;
                 printf("Points:  %d\n", points);
-            }
-            break;
-            
-        case 6  :
-            printf("You lose...\n");
-            points = sum;
-            printf("Points:  %d\n", points);
-            break;
-            
-        case 5  :
-            printf("You lose...\n");
-            points = sum;
-            printf("Points:  %d\n", points);
-            break;
-            
-        case 4  :
-            printf("You lose...\n");
-            points = sum;
-            printf("Points:  %d\n", points);
-            break;
-
-        case 3  :
-            printf("YOU CRAPPED OUT!  God...you're SUCH A LOSER!\n");
-            points = 0;
-            break;
-            
-        case 2  :
-            printf("YOU CRAPPED OUT!  God...you're SUCH A LOSER!\n");
-            points = 0;
-            break;
+                break;
+                
+            case 5  :
+                printf("Roll 1:  %d\n", roll1);
+                printf("Roll 2:  %d\n", roll2);
+                printf("You lose...\n");
+                points = sum;
+                printf("Points:  %d\n", points);
+                break;
+                
+            case 4  :
+                printf("Roll 1:  %d\n", roll1);
+                printf("Roll 2:  %d\n", roll2);
+                printf("You lose...\n");
+                points = sum;
+                printf("Points:  %d\n", points);
+                break;
+                
+            case 3  :
+                printf("Roll 1:  %d\n", roll1);
+                printf("Roll 2:  %d\n", roll2);
+                printf("YOU CRAPPED OUT!  God...you're SUCH A LOSER!\n");
+                points = 0;
+                break;
+                
+            case 2  :
+                printf("Roll 1:  %d\n", roll1);
+                printf("Roll 2:  %d\n", roll2);
+                printf("YOU CRAPPED OUT!  God...you're SUCH A LOSER!\n");
+                points = 0;
+                break;
+        }
     }
     
     return 0;
