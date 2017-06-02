@@ -53,8 +53,12 @@ int main() {
         if (UserInputString[i] >= 'a' && UserInputString[i] <= 'z'){
             count[UserInputString[i]-'a']++;
             printf(" %c", count[UserInputString[i]-'a']++);
-            i++;
         }
+        else if (UserInputString[i] >= 'A' && UserInputString[i] <= 'Z'){
+            count[UserInputString[i]-'A']++;
+            printf(" %c", count[UserInputString[i]-'A']++);
+        }
+        i++;
     }
     for (int j = 0; j < 26; j++)
     {
@@ -62,7 +66,7 @@ int main() {
          whose count is at least 1 */
         
         if (count[j] != 0)
-            printf("%c occurs %d times in the entered string.\n",j+'a',count[j]);
+            printf(" %c : %d\n",j+'a',count[j]);
     }
 
 //
