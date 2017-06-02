@@ -34,17 +34,45 @@ B: 0 b:1
 char Upper[] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 char Lower[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
 char UserInputString[512];
-int i = 0;
+int i = 0, count[26] = {0};
 
 int main() {
-
-    printf("===== Enter string here =====\n");
-    scanf(" %[^\n]s",UserInputString);
-    printf("=============================\n");
-    printf("Length of string is %d \n",strlen(UserInputString));
-
-    for (i = 0; i <= strlen(UserInputString); i++)
-        // printf("at index %d is the value %c\n\n", i, UserInputString[i]);
     
+    
+        printf("===== Enter string here =====\n");
+        scanf(" %[^\n]s",&UserInputString);
+        printf("=============================\n");
+//        printf("Length of string is %d \n",strlen(UserInputString));
+    
+    
+    while (UserInputString[i] != '\0')
+    {
+        /** Considering characters from 'a' to 'z' only
+         and ignoring others */
+        
+        if (UserInputString[i] >= 'a' && UserInputString[i] <= 'z'){
+            count[UserInputString[i]-'a']++;
+            printf(" %c", count[UserInputString[i]-'a']++);
+            i++;
+        }
+    }
+    for (int j = 0; j < 26; j++)
+    {
+        /** Printing only those characters
+         whose count is at least 1 */
+        
+        if (count[j] != 0)
+            printf("%c occurs %d times in the entered string.\n",j+'a',count[j]);
+    }
+
+//
+//    for (i = 0; i <= strlen(UserInputString); i++){
+//        //printf("at index %d is the value %c\n\n", i, UserInputString[i]);
+//        for (int j = 0; j <= 25; j++){
+//            if (UserInputString[i] = Upper[j]){
+//                printf("Found it");
+//            }
+//        }
+//    }
     return 0;
 }
